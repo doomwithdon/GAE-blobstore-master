@@ -1,0 +1,25 @@
+application: doomwithdon0
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /font-awesome-4.1.0
+  static_dir: font-awesome-4.1.0
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: .*
+  script: main.app
